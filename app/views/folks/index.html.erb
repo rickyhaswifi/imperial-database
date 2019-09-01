@@ -1,0 +1,12 @@
+<h1><i class="fab fa-first-order"></i> IMPERIAL DATABASE</h1>
+<h2>KNOWN REBELS</h2>
+
+<ul>
+<% @folks.each do |folk| %>
+<li> <%= link_to folk.name, folk %> </li>
+<% end %>
+</ul>
+
+<button class="btn btn-warning">
+<%= link_to 'Add new rebel', new_folk_path %>
+</button>

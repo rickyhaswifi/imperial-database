@@ -1,0 +1,2 @@
+class Folk < ApplicationRecord
+end

@@ -1,0 +1,20 @@
+    <h1> <i class="fab fa-jedi-order"></i> Rebel Name: <%= @folk.name %> </h1>
+    <h2> Criminal Details</h2>
+
+    <ul> 
+    <li> Age: <%= @folk.age %>  </li>
+    <li> Hair Color: <%= @folk.hair_color %>  </li>
+    <li> Eye Color: <%= @folk.eye_color %>  </li>
+    <li> Gender: <%= @folk.gender %>  </li>
+    <li> Still Alive: <%= @folk.alive %> </li> 
+    </ul>
+
+<hr>
+
+<p> Change rebel status </p>
+
+<button class="btn btn-success"> <%= link_to 'Back', root_path%> </button>
+
+<button class="btn btn-warning"> <%= link_to 'Update Details', edit_folk_path(@folk) %> </button>
+
+<button class="btn btn-danger">  <%= link_to 'Remove Threat', @folk,  method: :delete %> </button>
